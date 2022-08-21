@@ -12,9 +12,20 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 
+    text-align: center;
+
     &:not(:last-child) {
-            margin-bottom: 9px;
+            margin-bottom: 8px;
         }
+
+            @media screen and (min-width: 1200px) {
+
+                text-align: left;
+                
+                    &:not(:last-child) {
+                            margin-bottom: 9px;
+                        }
+                }
 }
 
 .address__link {

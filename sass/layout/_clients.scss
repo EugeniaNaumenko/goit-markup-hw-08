@@ -1,5 +1,6 @@
 .clients {
-    @extend %section;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .clients__list {
@@ -15,8 +16,16 @@
 // .clients__item {}
 
 .item-clients {
-    width: 170px;
+    width: 210px;
     height: 92px;
+    
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
 }
 
 .item-clients__link {
