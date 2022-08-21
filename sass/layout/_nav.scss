@@ -1,0 +1,57 @@
+// .navigation {}
+
+.navigation__list {
+    @extend %list;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.navigation__item {
+    position: relative;
+   
+}
+
+.navigation__link {
+    @extend %link;
+
+    color: var(--title-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+
+    display: block;
+
+    padding-top: 32px;
+    padding-bottom: 31px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            color: var(--brand-color);
+        }
+
+}
+
+.navigation__link--current {
+    
+    &::after {
+            content: '';
+    
+            display: block;
+    
+            width: 100%;
+            height: 4px;
+            background: var(--brand-color);
+            border-radius: 2px;
+    
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+        }
+}
+

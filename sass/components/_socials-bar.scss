@@ -1,0 +1,44 @@
+// team-socials
+
+.socials__list {
+    @extend %list;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.socials__item {
+    width: 44px;
+    height: 44px;
+}
+
+.socials__link {
+    @include socialsLink(#FFFFFF);
+    
+    &:hover,
+        &:focus {
+            background-color: var(--brand-color);
+        }
+
+}
+
+.socials__icon {
+    @include socialsIcon(#AFB1B8);
+          
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .socials__link:hover &,
+        .socials__link:focus & {
+            fill: var(--white-title-color);
+        }
+}
+
+// footer socials
+.socials__link--footer-dark {
+    @include socialsLink(rgba(255, 255, 255, 0.1));
+}
+
+.socials__icon--footer-dark {
+    @include socialsIcon(#FFFFFF);
+}
