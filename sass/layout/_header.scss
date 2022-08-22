@@ -25,6 +25,10 @@
 }
 
 .header__logo {   
+    @media screen and (min-width: 768px) {
+            margin-right: 88px;
+        }
+        
     @media screen and (min-width: 1200px) {
             margin-right: 93px;
         }
@@ -56,13 +60,16 @@
 // .icon__menu {}
 
 .header__list {    
-    margin-left: auto;
+   
     @extend %list;
     
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+
+    @media screen and (min-width: 768px) {
+            margin-left: auto;
+        }
 
     @media screen and (min-width: 1200px) {
         flex-direction: row;

@@ -38,7 +38,7 @@
             <use class="icon__menu" href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
-        
+
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -76,7 +76,6 @@
             </a>
           </li>
         </ul>
-
       </div>
     </header>
 
@@ -89,7 +88,6 @@
           <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-
 
       <!--Section-2 benefits-->
       <section class="benefits">
@@ -153,8 +151,13 @@
               <div class="item-what-we-do__thumb">
                 <img
                   class="item-what-we-do__image"
-                  src="./images/wwd-img-1.jpg"
+                  srcset="
+                    ./images/what-we-do/wwd-1@1x_l.jpg 1x,
+                    ./images/what-we-do/wwd-1@2x_l.jpg 2x
+                  "
+                  src="./images/what-we-do/wwd-1@1x_l.jpg"
                   alt="Человек набирает программный код на планшете"
+                  width="370px"
                 />
                 <div class="item-what-we-do__wrap">
                   <p class="item-what-we-do__text">Десктопные приложения</p>
@@ -165,8 +168,13 @@
               <div class="item-what-we-do__thumb">
                 <img
                   class="item-what-we-do__image"
-                  src="./images/wwd-img-2.jpg"
+                  src="./images/what-we-do/wwd-2@1x_l.jpg"
+                  srcset="
+                    ./images/what-we-do/wwd-2@1x_l.jpg 1x,
+                    ./images/what-we-do/wwd-2@2x_l.jpg 2x
+                  "
                   alt="Человек на мониторе ноутбука выбирает вариант верстки контента на странице мобильной версии сайта"
+                  width="370px"
                 />
                 <div class="item-what-we-do__wrap">
                   <p class="item-what-we-do__text">Мобильные приложения</p>
@@ -177,9 +185,14 @@
               <div class="item-what-we-do__thumb">
                 <img
                   class="item-what-we-do__image"
-                  src="./images/wwd-img-3.jpg"
+                  srcset="
+                    ./images/what-we-do/wwd-3@1x_l.jpg 1x,
+                    ./images/what-we-do/wwd-3@2x_l.jpg 2x
+                  "
+                  src="./images/what-we-do/wwd-3@1x_l.jpg"
                   alt="Человек на планшете выбирает один из цветов из цветового
             круга"
+                  width="370px"
                 />
                 <div class="item-what-we-do__wrap">
                   <p class="item-what-we-do__text">Дизайнерские решения</p>
@@ -198,10 +211,18 @@
             <li class="team__item item-team">
               <img
                 class="item-team__image"
-                src="./images/our-team-img-1.jpg"
+                srcset="
+                ./images/team/team-1@1x_l.jpg 270w,
+                ./images/team/team-1@1x_m.jpg 354w,
+                ./images/team/team-1@1x_s.jpg 450w,
+                ./images/team/team-1@2x_l.jpg 540w,
+                ./images/team/team-1@2x_m.jpg 708w,
+                ./images/team/team-1@2x_s.jpg 900w  
+                "
+                src="./images/team/team-1@1x_s.jpg"
                 alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                width="450"
               />
               <div class="item-team__wrap wrap-team-item">
                 <h3 class="wrap-team-item__heading">Игорь Демьяненко</h3>
@@ -269,10 +290,18 @@
             <li class="team__item item-team">
               <img
                 class="item-team__image"
-                src="./images/our-team-img-2.jpg"
+                srcset="
+                ./images/team/team-2@1x_l.jpg 270w,
+                ./images/team/team-2@1x_m.jpg 354w,
+                ./images/team/team-2@1x_s.jpg 450w,
+                ./images/team/team-2@2x_l.jpg 540w,
+                ./images/team/team-2@2x_m.jpg 708w,
+                ./images/team/team-2@2x_s.jpg 900w  
+                "
+                src="./images/team/team-2@1x_s.jpg"
                 alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                width="450"
               />
               <div class="item-team__wrap wrap-team-item">
                 <h3 class="wrap-team-item__heading">Ольга Репина</h3>
@@ -340,10 +369,18 @@
             <li class="team__item item-team">
               <img
                 class="item-team__image"
-                src="./images/our-team-img-3.jpg"
+                srcset="
+                ./images/team/team-3@1x_l.jpg 270w,
+                ./images/team/team-3@1x_m.jpg 354w,
+                ./images/team/team-3@1x_s.jpg 450w,
+                ./images/team/team-3@2x_l.jpg 540w,
+                ./images/team/team-3@2x_m.jpg 708w,
+                ./images/team/team-3@2x_s.jpg 900w  
+                "
+                src="./images/team/team-3@1x_s.jpg"
                 alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                width="450"
               />
               <div class="item-team__wrap wrap-team-item">
                 <h3 class="wrap-team-item__heading">Николай Тарасов</h3>
@@ -411,10 +448,18 @@
             <li class="team__item item-team">
               <img
                 class="item-team__image"
-                src="./images/our-team-img-4.jpg"
+                srcset="
+                ./images/team/team-4@1x_l.jpg 270w,
+                ./images/team/team-4@1x_m.jpg 354w,
+                ./images/team/team-4@1x_s.jpg 450w,
+                ./images/team/team-4@2x_l.jpg 540w,
+                ./images/team/team-4@2x_m.jpg 708w,
+                ./images/team/team-4@2x_s.jpg 900w  
+                "
+                src="./images/team/team-4@1x_s.jpg"
                 alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                width="450"
               />
               <div class="item-team__wrap wrap-team-item">
                 <h3 class="wrap-team-item__heading">Михаил Ермаков</h3>
@@ -580,8 +625,10 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container footer__container">
+
+        <div class="footer__tablet-container">
         <div class="footer__adress-container">
-          <a class="logo logo--white " href="./index.html"
+          <a class="logo logo--white" href="./index.html"
             ><span class="logo__web">Web</span>Studio</a
           >
 
@@ -667,6 +714,7 @@
             </li>
           </ul>
         </div>
+        </div>
 
         <div class="footer__modal-container">
           <strong class="footer__action">Подпишитесь на рассылку</strong>
@@ -690,72 +738,81 @@
       </div>
     </footer>
 
-
     <!--Mobile-menu-->
 
     <div class="mobile__backdrop" data-menu>
       <div class="mobile__container">
-    
         <button type="button" class="mobile__button" data-menu-close>
           <svg width="40px" height="40px" class="mobile__icon icon" aria-label="Меню">
             <use class="icon__close" href="./images/symbol-defs.svg#icon-menu-close"></use>
           </svg>
-          </button>
-    
-          <nav class="mobile__navigation navigation-mobile">
-            <ul class="navigation-mobile__list">
-              <li class="navigation-mobile__item">
-                <a class="navigation-mobile__link" href="./index.html" aria-current="page">Студия</a>
-              </li>
-              <li class="navigation-mobile__item">
-                <a class="navigation-mobile__link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="navigation-mobile__item">
-                <a class="navigation-mobile__link" href="./contacts.html">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-    
-          <ul class="mobile__list">
-            <li class="mobile__item">
-              <a class="mobile__link" href="mailto:info@devstudio.com">
-                
-                info@devstudio.com
-              </a>
+        </button>
+
+        <nav class="mobile__navigation navigation-mobile">
+          <ul class="navigation-mobile__list">
+            <li class="navigation-mobile__item">
+              <a class="navigation-mobile__link" href="./index.html" aria-current="page">Студия</a>
             </li>
-            <li class="mobile__item">
-              <a class="mobile__link" href="tel:+380961111111">
-          
-                +38 096 111 11 11
-              </a>
+            <li class="navigation-mobile__item">
+              <a class="navigation-mobile__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a class="navigation-mobile__link" href="./contacts.html">Контакты</a>
             </li>
           </ul>
+        </nav>
 
-          <ul class="mobile__socials socials-mobile">
-            <li class="socials-mobile__item">
-              <a class="socials-mobile__link" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener">
-                Instagram
-              </a>
-            </li>
-            <li class="socials-mobile__item">
-              <a class="socials-mobile__link" href="https://twitter.com" target="_blank" rel="noreferrer noopener">
-            Twitter           
-              </a>
-            </li>
-            <li class="socials-mobile__item">
-              <a class="socials-mobile__link" href="https://uk-ua.facebook.com" target="_blank" rel="noreferrer noopener">
-                Facebook
-              </a>
-            </li>
-            <li class="socials-mobile__item">
-              <a class="socials-mobile__link" href="https://ua.linkedin.com" target="_blank" rel="noreferrer noopener">
-                LinkedIn 
-              </a>
-            </li>
-          </ul>
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a class="mobile__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+          </li>
+        </ul>
 
-          
-    
+        <ul class="mobile__socials socials-mobile">
+          <li class="socials-mobile__item">
+            <a
+              class="socials-mobile__link"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Instagram
+            </a>
+          </li>
+          <li class="socials-mobile__item">
+            <a
+              class="socials-mobile__link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Twitter
+            </a>
+          </li>
+          <li class="socials-mobile__item">
+            <a
+              class="socials-mobile__link"
+              href="https://uk-ua.facebook.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Facebook
+            </a>
+          </li>
+          <li class="socials-mobile__item">
+            <a
+              class="socials-mobile__link"
+              href="https://ua.linkedin.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <!--Modal-->
