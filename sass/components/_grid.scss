@@ -2,14 +2,17 @@
     @extend %list;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 24px;
+    gap: 30px;
+    
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
 }
 
 .grid__item {
-    flex-basis: calc((100% - 24px * 8) / 9);
+    
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -17,11 +20,23 @@
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+
+        @media screen and (min-width: 768px) {
+                    flex-basis: calc((100% - 30px) / 2);
+                }
+        
+                @media screen and (min-width: 1200px) {
+                    flex-basis: calc((100% - 60px) / 3);
+                }
 }
 
 .grid__link {
     @extend %link;
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
 
     &:focus,
     &:hover {
@@ -34,8 +49,6 @@
     position: relative;
     overflow: hidden;
 
-    width: 370px;
-    height: 294px;
 }
 
 // .thumb {}
@@ -82,6 +95,7 @@
 }
 
 .grid__wrap {
+    flex-grow: 1;
     border: 1px solid var(--wrap-color);
     border-top: 0;
     padding: 20px 24px;

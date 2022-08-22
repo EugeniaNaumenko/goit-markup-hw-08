@@ -1,12 +1,35 @@
+.filter__section {
+ 
+        @media screen and (max-width: 768px), (max-width: 1999px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+}
 .filter {
     @extend %list;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media screen and (man-width: 767px) {
+            max-width: 361px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
 }
 
 // .filter__item {}
